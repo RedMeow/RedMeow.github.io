@@ -1,8 +1,418 @@
-<p>Hello 大家好!</p>
-<p>我是红喵(RedMeow),这个我的个人网站。</p>
-<p>很高兴你来到这里，你可以在以下的链接中下载原图</p>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>[饿了么红包]翻3倍</title>
+    <script src="./index_files/jquery.min.js"></script>
+    <style id="__WXWORK_INNER_SCROLLBAR_CSS">
+        ::-webkit-scrollbar {
+            width: 12px !important;
+            height: 12px !important;
+        }
 
-<ul>
-   <li> <a href="https://img1.imgtp.com/2022/06/25/77jPV6YU.jpg">康乃馨俱乐部图片下载</a> </li>
-   <li> <a href="https://afdian.net/@Redmeow">我的爱发电主页(欢迎各位来赞助喵!)</a> </li>
-</ul>
+        ::-webkit-scrollbar-track:vertical {}
+
+        ::-webkit-scrollbar-thumb:vertical {
+            background-color: rgba(136, 141, 152, 0.5) !important;
+            border-radius: 10px !important;
+            background-clip: content-box !important;
+            border: 2px solid transparent !important;
+        }
+
+        ::-webkit-scrollbar-track:horizontal {}
+
+        ::-webkit-scrollbar-thumb:horizontal {
+            background-color: rgba(136, 141, 152, 0.5) !important;
+            border-radius: 10px !important;
+            background-clip: content-box !important;
+            border: 2px solid transparent !important;
+        }
+
+        ::-webkit-resizer {
+            display: none !important;
+        }
+    </style>
+    <style>
+        .box {
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, .05);
+            box-shadow: 0 8px 8px rgba(0, 0, 0, .05);
+            padding: 10px;
+        }
+
+        .btn {
+            width: 100px;
+            height: 38px;
+            border-radius: 38px;
+            border: 0;
+        }
+
+        .btn_copy_text {
+            background: url(copy-btn.png);
+        }
+
+        .btn_get_coupon {
+            background: url(go-btn.png);
+        }
+
+        .tips {
+            background: url(copy-tips.png);
+            width: 217px;
+            height: 19px;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            margin-left: -108px;
+        }
+
+        .txt {
+            border: dashed 1px #ccc;
+            background-color: #fff;
+            text-align: center;
+            font-size: 18px;
+            padding: 20px 0;
+            font-weight: bolder;
+            width: 100%;
+        }
+
+        input[type="text"] {
+            -webkit-appearance: none;
+        }
+
+        .beatMain {
+            position: relative;
+            z-index: 2;
+            padding: 0 16px;
+        }
+
+        .beatMain .imgContainer {
+            padding: 0 16px;
+            margin-top: 14px;
+        }
+
+        .beatMain .imgContainer img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 3px 12px rgba(21, 0, 71, 0.16);
+        }
+
+        .beatMain .moonTitleContainer {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.4);
+            margin-bottom: 16px;
+        }
+
+        .beatMain .moonTitleContainer span {
+            color: #FF5500;
+            margin-right: 16px;
+        }
+
+        .beatMain .itemContent {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.80);
+            line-height: 21px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .beatMain .itemPrice {
+            font-family: STHeitiSC-Light;
+            font-size: 16px;
+            color: #FF5500;
+            line-height: 16.5px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .beatMain .itemTips {
+            font-size: 12px;
+            color: rgba(0, 0, 0, .4);
+            text-align: center;
+        }
+
+        .beatWord {
+            text-align: center;
+        }
+
+        .beatWord fieldset {
+            padding: 0px 10px 0px 10px;
+            margin: 0 2px;
+            border: 1px dashed #f54d23;
+            background: #fff;
+        }
+
+        .beatWord fieldset legend {
+            background: #f54d23;
+            border: none;
+            font-size: 0.8rem;
+            line-height: 20px;
+            color: #fff;
+            padding: 0 4px;
+        }
+
+        .beatWord button {
+            border: none;
+            font-size: 16px;
+            padding: 6px 15px;
+            background: #f60;
+            display: inline-block;
+            margin: 10px auto;
+            border-radius: 16px;
+            color: #fff;
+        }
+
+        .beatWord1 {
+            text-align: center;
+        }
+
+        .beatWord1 fieldset {
+            padding: 0px 10px 0px 10px;
+            margin: 0 2px;
+            border: 1px dashed #00aa00;
+            background: #fff;
+        }
+
+        .beatWord1 fieldset legend {
+            background: #00aa00;
+            border: none;
+            font-size: 0.8rem;
+            line-height: 20px;
+            color: #fff;
+            padding: 0 4px;
+        }
+
+        @media screen and (min-width:960px) {
+            html {
+                width: 400px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    <style>
+        #BAIDU_DSPUI_FLOWBAR,
+        .adsbygoogle,
+        .ad,
+        div[class^="ad-widsget"],
+        div[id^="div-gpt-ad-"],
+        a[href*="cpro.baidu.com"],
+        a[href*="@"][href*=".exe"],
+        a[href*="/?/"][href*=".exe"],
+        .adpushwin {
+            display: none !important;
+            max-width: 0 !important;
+            max-height: 0 !important;
+            overflow: hidden !important;
+        }
+    </style>
+</head>
+
+<body style="padding: 5px 0px; background-color: rgb(238, 238, 238); zoom: 1;">
+    <div class="box">
+        <div style="text-align: center;">
+            <img src="./index_files/dot.jpg" style="width: 100%; ">
+            <div style="text-align: center;">
+                <p>
+                </p>
+                <p></p>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:20px;position: relative;">
+            <div class="beatWord1">
+                <fieldset>
+                    <legend id="copy_tip">　　　　　两种领取方式　　　　　</legend>
+                    <p style="text-align: left;font-size: 14px;">1️⃣ 长按上图保存到手机，打开「饿了么App」扫一扫（相册选取该图片）<br>
+                        <br> 2️⃣或者点下面“一键复制口令”，然后打开「饿了么App」弹窗直接翻倍领取【推荐】
+                    </p>
+                </fieldset>
+            </div>
+            <p>
+            </p>
+            <div class="beatWord">
+                <fieldset>
+                    <legend id="copy_tip">复制口令-&gt;打开「饿了么App」领取</legend>
+                    <p id="itemWord" class="itemWord" style="font-size: 14px;">
+                        复制框内整段文字，打开「饿了么App」即可抢3倍红包了！<span id="koulin">0d:/＄XHKAImP＄~</span></p>
+                </fieldset>
+                <button type="button" data-clipboard-text="0d:/＄XHKAImP＄~" class="itemCopy" id="itemCopy"
+                    style="background-color: rgb(245, 77, 35); border-color: rgb(245, 77, 35);">一键复制</button>
+            </div>
+        </div>
+        <div style="margin:15px auto; text-align: center;">
+            <button type="button" class="btn btn_copy_text" data-clipboard-text=""
+                style="display:none;"></button>
+            <div class="btn btn_get_coupon" onclick="click_btn()" style="display:none;"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./index_files/clipboard.min.js"></script>
+    <!-- <script src="./index_files/main.js"></script> -->
+    <script>
+        //复制文本
+        var clipboard = new Clipboard('.itemCopy');
+        clipboard.on('success', function(e) {
+            if (e.trigger.disabled == false || e.trigger.disabled == undefined) {
+                e.trigger.innerHTML = "复制成功，打开饿了么APP查看";
+                e.trigger.style.backgroundColor = "#9ED29E";
+                e.trigger.style.borderColor = "#9ED29E";
+                //e.clearSelection();
+                e.trigger.disabled = true;
+                //2秒后按钮恢复原状
+                setTimeout(function() {
+                    e.trigger.innerHTML = "一键复制";
+                    e.trigger.style.backgroundColor = "#f54d23";
+                    e.trigger.style.borderColor = "#f54d23";
+                    e.trigger.disabled = false;
+                }, 2000);
+            }
+        });
+        clipboard.on('error', function(e) {
+            e.trigger.innerHTML = "复制失败，请手动复制";
+            e.trigger.style.backgroundColor = "#8f8f8f";
+            e.trigger.style.borderColor = "#8f8f8f";
+        });
+        /**
+         *
+         *  Base64 encode / decode
+         *
+         *  @author haitao.tu
+         *  @date   2010-04-26
+         *  @email  tuhaitao@foxmail.com
+         *
+         */
+        function Base64() {
+            // private property
+            _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+            // public method for encoding
+            this.encode = function(input) {
+                var output = "";
+                var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+                var i = 0;
+                input = _utf8_encode(input);
+                while (i < input.length) {
+                    chr1 = input.charCodeAt(i++);
+                    chr2 = input.charCodeAt(i++);
+                    chr3 = input.charCodeAt(i++);
+                    enc1 = chr1 >> 2;
+                    enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+                    enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+                    enc4 = chr3 & 63;
+                    if (isNaN(chr2)) {
+                        enc3 = enc4 = 64;
+                    } else if (isNaN(chr3)) {
+                        enc4 = 64;
+                    }
+                    output = output + _keyStr.charAt(enc1) + _keyStr.charAt(enc2) + _keyStr.charAt(enc3) +
+                        _keyStr.charAt(enc4);
+                }
+                return output;
+            }
+            // public method for decoding
+            this.decode = function(input) {
+                var output = "";
+                var chr1, chr2, chr3;
+                var enc1, enc2, enc3, enc4;
+                var i = 0;
+                input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+                while (i < input.length) {
+                    enc1 = _keyStr.indexOf(input.charAt(i++));
+                    enc2 = _keyStr.indexOf(input.charAt(i++));
+                    enc3 = _keyStr.indexOf(input.charAt(i++));
+                    enc4 = _keyStr.indexOf(input.charAt(i++));
+                    chr1 = (enc1 << 2) | (enc2 >> 4);
+                    chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+                    chr3 = ((enc3 & 3) << 6) | enc4;
+                    output = output + String.fromCharCode(chr1);
+                    if (enc3 != 64) {
+                        output = output + String.fromCharCode(chr2);
+                    }
+                    if (enc4 != 64) {
+                        output = output + String.fromCharCode(chr3);
+                    }
+                }
+                output = _utf8_decode(output);
+                return output;
+            }
+            // private method for UTF-8 encoding
+            _utf8_encode = function(string) {
+                string = string.replace(/\r\n/g, "\n");
+                var utftext = "";
+                for (var n = 0; n < string.length; n++) {
+                    var c = string.charCodeAt(n);
+                    if (c < 128) {
+                        utftext += String.fromCharCode(c);
+                    } else if ((c > 127) && (c < 2048)) {
+                        utftext += String.fromCharCode((c >> 6) | 192);
+                        utftext += String.fromCharCode((c & 63) | 128);
+                    } else {
+                        utftext += String.fromCharCode((c >> 12) | 224);
+                        utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+                        utftext += String.fromCharCode((c & 63) | 128);
+                    }
+                }
+                return utftext;
+            }
+            // private method for UTF-8 decoding
+            _utf8_decode = function(utftext) {
+                var string = "";
+                var i = 0;
+                var c = c1 = c2 = 0;
+                while (i < utftext.length) {
+                    c = utftext.charCodeAt(i);
+                    if (c < 128) {
+                        string += String.fromCharCode(c);
+                        i++;
+                    } else if ((c > 191) && (c < 224)) {
+                        c2 = utftext.charCodeAt(i + 1);
+                        string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+                        i += 2;
+                    } else {
+                        c2 = utftext.charCodeAt(i + 1);
+                        c3 = utftext.charCodeAt(i + 2);
+                        string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+                        i += 3;
+                    }
+                }
+                return string;
+            }
+        }
+        $(function() {
+            var koulin = "24iXKQ4";
+            var koulin = "1:/＄" + koulin + "＄~"
+            $("#itemCopy").attr("data-clipboard-text", koulin);
+            $("#koulin").text(koulin);
+            //UA判断
+            var isShow = 0; //控制是否显示一键复制按钮
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/iphone/i) == "iphone" || ua.match(/ipad/i) == "ipad") {
+                $('#copy_tip').text("　　　　　　领取方式　　　　　　");
+                var iphoneInfo = ua.match(/iphone os (\d{1,})/i);
+                var iosVersion = iphoneInfo[1];
+                if (iosVersion >= 10 || ua.match(/ipad/i) == 'ipad') {
+                    $('.itemCopy').show();
+                }
+            } else {
+                $('.itemCopy').show();
+            }
+            //自动选中
+            var beat = document.querySelector('.beatWord');
+            var word = document.querySelector('.itemWord');
+            var copy = document.querySelector('.itemCopy');
+            document.addEventListener("selectionchange", function(e) {
+                window.getSelection().selectAllChildren(word);
+            }, false);
+            var pic =
+                "aHR0cHM6Ly9pbWcuYWxpY2RuLmNvbS9pbWdleHRyYS9pNC8xMzAyODU2MjcvVEIyWF9RSWp2Tk5US0pqU3NwY1hYYjRLVlhhXyEhMTMwMjg1NjI3LmpwZw==";
+            if (pic) {
+                var base = new Base64();
+                pic = base.decode(pic);
+                $("#img").attr('src', pic);
+                $(".imgContainer").show();
+            }
+        });
+    </script>
+    <textarea readonly=""
+        style="font-size: 12pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;"></textarea>
+</body>
+
+</html>
