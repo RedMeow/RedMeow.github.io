@@ -1,0 +1,34 @@
+<!DOCTYPE html><html><!-- This web page is copied by the "https://bazhan.wang" --><head><meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/1f434.png" type="image/png">
+		<title>你说你🐴呢</title>
+		<style>body,html{font-size:100px}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline}*{font-size:.14rem}a{text-decoration:none}b{font-weight:700}a:hover{color:var(--a-hover)}textarea{box-sizing:border-box;padding:.1rem;width:100%;height:2rem;outline:0;border:2px solid #613d30;border-radius:.1rem;background:#fff;color:#000;-webkit-transition:border-color .3s;-moz-transition:border-color .3s;-o-transition:border-color .3s;transition:border-color .3s}textarea:focus,textarea:hover{border-color:#f7894a}button{width:3rem;height:.5rem;outline:0;border:0;border-radius:.1rem;background:#f7894a;color:#613d30;font-size:.16rem;cursor:pointer;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s;transition:all .3s}button:hover{background:#ffc83d}button:active{background:#613d30;color:#fff}.app{margin:.5rem auto;width:8rem}.title{padding-bottom:.5rem;color:#ccc;text-align:center;font-size:1rem}.center{padding:.1rem 0}</style>
+	</head>
+	<body>
+		<div class="app">
+			<div class="title">你说你🐴呢</div>
+			<div class="main">
+				<div class="left">
+					<div class="top">
+						<textarea id="in"></textarea>
+					</div>
+				</div>
+				<div class="center">
+					<button onclick="javascript:to(0);">👇👇👇你说你🐴呢👇👇👇</button>
+					<button onclick="javascript:to(1);" style="float:right">👆👆👆看看傻逼网友说了什么👆👆👆</button>
+				</div>
+				<div class="right">
+					<div class="bottom">
+						<textarea id="out"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+<script>
+var code = '43448237662a69133a6036226144873834fa37a43a5fd34133444950a61847d46835b5fb53044c4914556a434e42f4f44dd61d4373674676a535d5fc33e6204f13b73004573464983c362d60c38e3a53bf48147b3e568569a49d4904584766284124a268f44b20161661e6ac42c4604f24864e342840d46e49b38769948a6374b144638443938f3804a346245249444238868434335a6324aa41748d4bd3814996806954263044f35113f04785133b633545f5146013036134353053a16b240e6a261c3374a44e160f48345064f68c30a6b63a842b36233844e6473ab3e93714803e846f4ba3c86455344eb42e6ad3394bb5283404a63e64e942434a35342d38641b6833be4b038d63139342000444d37360a4114713e04b95314774433496bd4883ba4e06234756973b14f64a86a73663c43ca4bf4303c03823b835e4194634e244f38c4d63c13634693c635443449745137548f45c47235f3913b03ec4544144443083613e337b44a44847f44743b31f4923025256304c049369348b41f358';
+function Eencode(b){var d=[];b=encodeURIComponent(b);for(var a=0;a<b.length;a++)if("%"==b[a])d.push(""+b[a+1]+b[a+2]),(a+=2);else{var c=/- _ . ! ~ * ' ( ) \u3002/;(/[0-9a-zA-Z]/.test(b.charCodeAt(a))||c.test(b.charCodeAt(a)))&&d.push("0000"+b.charCodeAt(a).toString(16))}b=d.join("");d="";for(a=0;a<b.length/2;a++)(c=parseInt(b.substr(2*a,2).split("").join("").replace(/\s/g,""),16)),(d+=String.fromCodePoint("0x1f"+code.substr(3*c,3)));return d}function Edecode(b){var d=b.split("");b=[];for(var a=0;a<d.length/2;a++){var c=d[2*a]+d[2*a+1];unescape(c.replace(/\u/g,"%u"));"\\u"+c.charCodeAt(a).toString(16);b.push(c)}d="";for(a=0;a<b.length;a++){c=b[a].codePointAt(0).toString(16).substr(-3);for(var e=0;e<code.length/3;e++)if(c==code.substr(3*e,3)){c=e.toString(16);1==c.length&&(c="0"+c);"00"!=c&&(d+="%"+c);break}}return decodeURIComponent(d)}
+function to(a){a ? document.getElementById('in').value = Edecode(document.getElementById('out').value) : document.getElementById('out').value = Eencode(document.getElementById('in').value)}
+</script>
+</body></html>
